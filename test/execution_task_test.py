@@ -1,6 +1,6 @@
 import requests
 
-def test_add():
+def test_add(): # Этот тест про отметку
     body = {"title": "generated", "completed": False}
     response = requests.post("https://todo-app-sky.herokuapp.com/", json=body)
     response_body = response.json()
