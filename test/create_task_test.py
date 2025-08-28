@@ -5,6 +5,6 @@ def create_test():
     response = requests.post("https://sky-todo-list.herokuapp.com/", json=body)
     response_body = response.json()
 
-    assert response.status_code == 202
+    assert response.status_code == 201
     assert response_body['completed'] == True
 
